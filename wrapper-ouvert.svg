@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+<path d="M1 7L7.5 1L14 7" stroke="#1B1B1B" stroke-linecap="round"/>
+</svg>
+
+
+        searchInput.addEventListener('keyup', (e) => {
+            const searchTerm = normalize(searchInput.value);
+            console.log(searchTerm);
+            const articleCard = document.querySelectorAll(".article");
+            filterElements(searchTerm, articleCard);
+            
+          });
+          
+          function normalize(text) {
+            return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+          }
+          
+          function filterElements(letters, elements){
+            
+            const lowerCaseLetters = letters.toLowerCase(); // Convertit la chaîne de recherche en minuscules
+            if (lowerCaseLetters.length > 2) {
+              for (let i = 0; i < elements.length; i++) {
+                const elementText = normalize(elements[i].textContent.toLowerCase());
+                if (elementText.includes(lowerCaseLetters)) {
+                  elements[i].style.display = "block";
+                  console.log(elements[i]);
+                  
+                } else {
+                  elements[i].style.display = "none";
+                }
+              }
+            } 
+            else if (lowerCaseLetters.length <3) {
+              for (let i = 0; i < elements.length; i++) {
+                elements[i].style.display = "block";
+                
+              }
+            }
+          
+          }
+
+          searchInput.addEventListener("keyup", () => {
+            function normalize(text) {
+                return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            }
+            const searchedVal = normalize(searchInput.value.toLowerCase());
+            console.log(searchedVal)
+           
+            closeSubmit.style.display = 'block'; 
+            closeSubmit.addEventListener('click', () => {
+                searchInput.value = "";
+                closeSubmit.style.display = 'none'; 
+           ustensilList.innerHTML = ""; // Efface la liste actuelle
+           ingredientList.innerHTML = ""; // Efface la liste actuelle
+           applianceList.innerHTML = ""; // Efface la liste actuelle
+           recipeContainer.innerHTML = ""; // Efface la liste actuelle
+           ustensils.forEach(data => {
+               const listItem = document.createElement('li');
+               listItem.textContent = data;
+               ustensilList.appendChild(listItem);
+            });
+            ingredients.forEach(data => {
+                const listItem = document.createElement('li');
+                listItem.textContent = data;
+                ingredientList.appendChild(listItem);
+             });
+             appliances.forEach(data => {
+                const listItem = document.createElement('li');
+                listItem.textContent = data;
+                applianceList.appendChild(listItem);
+             });
+             recipes.forEach(recipe => {
+                const mediaGalery = mediaTemplate(recipe);
+                const recipeCard = mediaGalery.getRecette();
+                recipeContainer.appendChild(recipeCard);
+              });
+        });
+
+        });
