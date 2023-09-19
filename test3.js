@@ -318,6 +318,7 @@ ingredientList.addEventListener('click', (event) => {
       // Function to display filtered recipes
       function displayFilteredRecipes(filteredRecipes) {
         recipeContainer.innerHTML = '';
+
         filteredRecipes.forEach(recipe => {
           const mediaGalery = mediaTemplate(recipe);
           const recipeCard = mediaGalery.getRecette();
@@ -345,6 +346,9 @@ searchInput.addEventListener('input', function () {
       recipe.ustensils.some(utensil => utensil.toLowerCase().includes(searchText)) // Vérifie les ustensiles
     );
   });
+
+
+   filteredRecipes = searchFilteredRecipes;
 
   updateLists(searchFilteredRecipes);
   // Affichez les recettes filtrées dans le conteneur
