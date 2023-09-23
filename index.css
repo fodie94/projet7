@@ -262,103 +262,18 @@ background: #FFD15B;
 #number-recettes{
     display: flex;
     gap: 10px;
+    font-family: Anton;
+font-size: 21px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+color: #1B1B1B;
+width: 97px;
+height: 32px;
 }
 
 
-/*video test*/
-
-/* .wrapper{
-    width: 370px;
-}
-.select-btn ,.option li {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-}
-
-.select-btn ,.select-btn2, .select-btn3{
-    height: 65px;
-    font-size: 22px;
-    justify-content: space-between;
-    padding: 0 20px;
-    border-radius: 7px ;
-    background: #fff;
-    border: 1px solid black;
-}
-
-.select-btn svg{
-    font-size: 31px;
-    transition: transform 0.7 linear;
-}
-
-.wrapper.active .select-btn svg{
-   transform: rotate(-180deg);
-}
-
-.content{
-    display: none;
-    margin-top: 15px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 7px ;
-}
-
-.wrapper.active .content{
-    display: block ;
-}
-
-.content .search{
-    position: relative;
-}
-
-.search i{
-    left: 15px;
-    color: #999;
-    font-size:20px ;
-    line-height: 53px;
-    position:absolute;
-}
-
-.search input{
-    height: 53px;
-    width:100%;
-    font-size: 17px;
-    border-radius: 5px;
-    outline: none;
-    padding: 0 15px 0 43px;
-    border: 1px solid #b3b3b3;
-}
-
-.content .option{
-    margin-top:10px ;
-    max-height: 250px;
-    overflow-y: auto;
-}
-
-.option::-webkit-scrollbar{
-width: 7px;
-}
-
-.option::-webkit-scrollbar-track{
-    background: #f1f1f1;
-       border-radius: 25px;
-    }
-
-    .option::-webkit-scrollbar-thumb{
-       background: #ccc;
-       border-radius: 25px;
-        }
-
-.option li{
-    height: 50px;
-    padding: 0 13px;
-    font-size: 21px;
-    border-radius: 5px;
-}
-
-.option li:hover{
-    background: #f2f2f2;
-} */
 
 /* autre test */
 
