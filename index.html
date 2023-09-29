@@ -56,120 +56,98 @@
 
 
 
-        <!-- <div class="filtres-recettes">
-            <div class="filtres">
-                <select id="tri-select1">
-                    <option>Ingrédients</option>
-                  </select>
-                  <select id="tri-select2">
-                    <option>appliance</option>
-                  </select>
-                  <select id="tri-select3">
-                    <option>ustensil</option>
-                  </select>
-            </div>
-            <div id="number-recettes"></div>
-        </div>  -->
-
        
        <div class="filtre">
 
         <div class="ButtonIngredient">
-            <button id="toggleButtonIngredient">Afficher les ingrédients</button>
+            <div id="toggleButtonIngredient">
+              <div id="ButtonIngredientBis">
+              <div class="text">ingrédients</div>
+              <div id="wrapper-fermer" >
+                <img src="wrapper-fermer.svg" alt="wrapper-fermer"/>
+              </div>
+            </div>
             <div id="ingredientsContainer" style="display: none;">
+              <div class="search-ingredient">
               <input type="text" id="ingredientInput" placeholder="Ajouter un ingrédient">
-              <div class="searchFiltre">
-                <div class="submit">
+                
                   <div id="closeIngredient" style="display: none;">
                     <img src="close.svg" alt="close"/>
                   </div>
                   <div id="loucheSearchIngredient">
                     <img src="louche.svg" alt="loucheSearch"/>
                   </div>
-                  </div>
-              </div>
-              <div id="ingrédientSelect"></div>
+            </div>
+                  <!-- <div class="searchFiltre"> </div> -->
+              <div id="ingrédientSelect" style="display: none;"></div>
               <div id="ingredientList" class="scrollable-list"></div>
             </div>
+            </div>
+
     </div>
  
 
         <div class="ButtonAppliance">
-        <button id="toggleButtonAppliance">Afficher les appliance</button>
-    <div id="applianceContainer" style="display: none;">  
+        <div id="toggleButtonAppliance">
+          <div class="ButtonApplianceBis">
+          <div class="text"> appliances</div>
+          <div id="wrapper-fermer" >
+            <img src="wrapper-fermer.svg" alt="wrapper-fermer"/>
+          </div>
+        </div>
+    <div id="applianceContainer" style="display: none;"> 
+      
+      <div class="search-appliance">
       <input type="text" id="applianceInput" placeholder="Ajouter un appliance">  
-        <div class="searchFiltre">
-          <div class="submit">
+       
+          
             <div id="closeAppliance" style="display: none;">
               <img src="close.svg" alt="close"/>
             </div>
             <div id="loucheSearchAppliance">
               <img src="louche.svg" alt="loucheSearch"/>
             </div>
-            </div>
-        </div>
-        <div id="applianceSelect"></div>
+      </div>
+            <!-- <div class="searchFiltre"> </div> -->
+       
+        <div id="applianceSelect"  style="display: none;"></div>
         <div id="applianceList" class="scrollable-list"></div>
     </div>
 </div>
+        </div>
   
    <div class="ButtonUstensil">
-    <button id="toggleButtonUstensil">Afficher les ustensil</button>
+    <div id="toggleButtonUstensil">
+      <div class="ButtonUstensilBis">
+      <div class="text">ustensils</div>
+      <div id="wrapper-fermer" >
+        <img src="wrapper-fermer.svg" alt="wrapper-fermer"/>
+      </div>
+    </div>
     <div id="ustensilContainer" style="display: none;">
+
+      <div class="search-ustensil">
       <input type="text" id="ustensilInput" placeholder="Ajouter un appliance">
-        <div class="searchFiltre">
-          <div class="submit">
+      
+
             <div id="closeUstensil" style="display: none;">
               <img src="close.svg" alt="close"/>
             </div>
             <div id="loucheSearchUstensil">
               <img src="louche.svg" alt="loucheSearch"/>
             </div>
-            </div>
-        </div>
-        <div id="ustensilSelect"></div>
+      </div>
+            <!-- <div class="searchFiltre"> </div> -->
+        <div id="ustensilSelect"  style="display: none;"></div>
         <div id="ustensilList" class="scrollable-list"></div>
     </div> 
 </div>
+   </div>
 <div id="number-recettes"></div>
 </div>
  
 
 <div id="filtres-selected"></div>
-     
-
-
-
-            
-            
-        
-
-      
-        
-        
-        
-        
-          
-      
-<!-- <div class="filtres-recettes">
-  <div class="filtres">
-    <div id="tri-select1">
-      <button id="toggleButton">Sélectionner un ingrédient</button>
-      <div class="search">
-        <i class="uil uil-angle-down"></i>
-        <input type="text" id="ingredientInput" placeholder="Search" style="display: none;">
-      </div>
-      <ul class="option" id="ingredient-list" style="display: none;"></ul>
-    </div>
-  </div>
-</div> -->
-
-<!-- <button id="toggle-ingredients">Afficher les ingrédients</button>
-<div id="ingredients-container" class="hidden">
-  <input type="text" id="search-ingredients" placeholder="Rechercher un ingrédient">
-  <ul id="ingredient-list" class="scrollable-list"></ul>
-</div> -->
-
 
 
         <div id="filtres-selected"></div>
@@ -179,15 +157,8 @@
         </div>
 
     </main>
-   
-
-    <script src="recettes.js"></script>
-    <script src="recipes.json"></script>
-    <!-- <script src="test6.js"></script> -->
-    <!-- <script src="test7.js"></script> -->
-    <script src="test67.js"></script>
-    <!-- <script src="test8.js"></script> -->
-    <!-- <script src="test3.js"></script> -->
-    <!-- <script src="test9.js"></script> -->
+    <script src="recettes.js"  type="module"></script>
+    <!-- <script src="indexAlgo.js" type="module"></script> -->
+    <script src="indexAlgo2.js" type="module"></script>
 </body>
 </html>
