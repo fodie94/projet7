@@ -19,26 +19,29 @@ async function filterRecipes(recipes) {
   const searchInput = document.querySelector('input[type="text"]');
 //  const closeSubmit = document.getElementById("closeSubmit");
   // const filtresSelected = document.getElementById("filtres-selected");
+  const wrapperFermer = document.getElementById("wrapper-fermer");
 
-  const ButtonIngredientBis = document.getElementById(
-    "ButtonIngredientBis"
-  );
+
+  const ButtonIngredient = document.getElementById("ButtonIngredient");
+  const ButtonIngredientBis = document.getElementById("ButtonIngredientBis");
   const ingredientsContainer = document.getElementById("ingredientsContainer");
   const ingredientList = document.getElementById("ingredientList");
   const ingredientInput = document.getElementById("ingredientInput");
   const ingrédientSelect = document.getElementById("ingrédientSelect");
   const closeIngredient = document.getElementById("closeIngredient");
 
-  const toggleButtonAppliance = document.getElementById(
-    "toggleButtonAppliance"
+  const ButtonApplianceBis = document.getElementById(
+    "ButtonApplianceBis"
   );
+  const ButtonAppliance = document.getElementById("ButtonAppliance");
   const applianceContainer = document.getElementById("applianceContainer");
   const applianceList = document.getElementById("applianceList");
   const applianceInput = document.getElementById("applianceInput");
   const applianceSelect = document.getElementById("applianceSelect");
   const closeAppliance = document.getElementById("closeAppliance");
 
-  const toggleButtonUstensil = document.getElementById("toggleButtonUstensil");
+  const ButtonUstensil = document.getElementById("ButtonUstensil");
+  const ButtonUstensilBis = document.getElementById("ButtonUstensilBis");
   const ustensilContainer = document.getElementById("ustensilContainer");
   const ustensilList = document.getElementById("ustensilList");
   const ustensilInput = document.getElementById("ustensilInput");
@@ -89,8 +92,12 @@ async function filterRecipes(recipes) {
       ingredientsContainer.style.display === ""
     ) {
       ingredientsContainer.style.display = "block";
+      ButtonIngredient.style.height = "auto";
+   //   wrapperFermer.style.transform = "rotate(180deg)";
     } else {
       ingredientsContainer.style.display = "none";
+      ButtonIngredient.style.height = "56px";
+     // wrapperFermer.style.transform = "rotate(0deg)";    
     }
   });
 
@@ -167,14 +174,18 @@ async function filterRecipes(recipes) {
   }
   listeAppliance(recipes);
 
-  toggleButtonAppliance.addEventListener("click", () => {
+  ButtonApplianceBis.addEventListener("click", () => {
     if (
       applianceContainer.style.display === "none" ||
       applianceContainer.style.display === ""
     ) {
       applianceContainer.style.display = "block";
+      ButtonAppliance.style.height = "auto";
+      wrapperFermer.style.transform = "rotate(180deg)";
     } else {
       applianceContainer.style.display = "none";
+      ButtonAppliance.style.height = "56px";
+      wrapperFermer.style.transform = "rotate(0deg)";
     }
   });
 
@@ -255,14 +266,18 @@ async function filterRecipes(recipes) {
   }
   listeUstensils(recipes);
 
-  toggleButtonUstensil.addEventListener("click", () => {
+  ButtonUstensilBis.addEventListener("click", () => {
     if (
       ustensilContainer.style.display === "none" ||
       ustensilContainer.style.display === ""
     ) {
       ustensilContainer.style.display = "block";
+      ButtonUstensil.style.height = "auto";
+      wrapperFermer.style.transform = "rotate(180deg)";
     } else {
       ustensilContainer.style.display = "none";
+      ButtonUstensil.style.height = "56px";
+      wrapperFermer.style.transform = "rotate(0deg)";
     }
   });
 
@@ -451,26 +466,122 @@ async function filterRecipes(recipes) {
 //   listeUstensils(listRecipes);
 // }
 
+//c le bon pour le moment
+// function filtreRecherche() {
+//   // Variables pour stocker les filtres sélectionnés
+//   const selectedIngredients = [];
+//   const selectedAppliance = [];
+//   const selectedUtensil = [];
+
+//   // Récupérez la liste des recettes à partir de displayedRecipes
+//   let listRecipes = displayedRecipes;
+
+//   // Appliquez les filtres sur la liste des recettes
+//   for (let j = 0; j < select.length; j++) {
+//     const selected = select[j];
+//     if (ingredients.includes(selected)) {
+//       selectedIngredients.push(selected);
+//     }
+//     if (appliances.includes(selected)) {
+//       selectedAppliance.push(selected);
+//     }
+//     if (ustensils.includes(selected)) {
+//       selectedUtensil.push(selected);
+//     }
+//   }
+
+//   if (selectedIngredients.length > 0) {
+//     const filteredRecipes = [];
+//     for (let i = 0; i < listRecipes.length; i++) {
+//       const recipe = listRecipes[i];
+//       const hasAllIngredients = selectedIngredients.every((ingredient) => {
+//         return recipe.ingredients.some((recipeIngredient) =>
+//           recipeIngredient.ingredient.includes(ingredient)
+//         );
+//       });
+//       if (hasAllIngredients) {
+//         filteredRecipes.push(recipe);
+//       }
+//     }
+//     listRecipes = filteredRecipes;
+//   }
+
+//   if (selectedAppliance.length > 0) {
+//     const filteredRecipes = [];
+//     for (let i = 0; i < listRecipes.length; i++) {
+//       const recipe = listRecipes[i];
+//       if (selectedAppliance.includes(recipe.appliance)) {
+//         filteredRecipes.push(recipe);
+//       }
+//     }
+//     listRecipes = filteredRecipes;
+//   }
+
+//   if (selectedUtensil.length > 0) {
+//     const filteredRecipes = [];
+//     for (let i = 0; i < listRecipes.length; i++) {
+//       const recipe = listRecipes[i];
+//       const hasSelectedUtensil = recipe.ustensils.some((utensil) => selectedUtensil.includes(utensil));
+//       if (hasSelectedUtensil) {
+//         filteredRecipes.push(recipe);
+//       }
+//     }
+//     listRecipes = filteredRecipes;
+//   }
+
+//   // Affichez les recettes filtrées
+//   recipeContainer.innerHTML = "";
+//   count = 0;
+//   for (let i = 0; i < listRecipes.length; i++) {
+//     count++;
+//     const recipe = listRecipes[i];
+//     const mediaGalery = mediaTemplate(recipe);
+//     const recipeCard = mediaGalery.getRecette();
+//     recipeContainer.appendChild(recipeCard);
+//     updateNumberRecettes(count);
+//   }
+
+//   // Mettez à jour les listes de filtres (ingrédients, appareils, ustensiles)
+//   ingredients = [];
+//   appliances = [];
+//   ustensils = [];
+
+//   ingredientList.innerHTML = "";
+//   applianceList.innerHTML = "";
+//   ustensilList.innerHTML = "";
+
+//   listeIngredients(listRecipes);
+//   listeAppliance(listRecipes);
+//   listeUstensils(listRecipes);
+// }
+
+//c le dernier pour le moment 
 function filtreRecherche() {
-  // Variables pour stocker les filtres sélectionnés
   const selectedIngredients = [];
   const selectedAppliance = [];
   const selectedUtensil = [];
 
-  // Récupérez la liste des recettes à partir de displayedRecipes
   let listRecipes = displayedRecipes;
 
-  // Appliquez les filtres sur la liste des recettes
   for (let j = 0; j < select.length; j++) {
     const selected = select[j];
-    if (ingredients.includes(selected)) {
-      selectedIngredients.push(selected);
+    for (let i = 0; i < ingredients.length; i++) {
+      if (ingredients[i] === selected) {
+        selectedIngredients.push(selected);
+        break;
+      }
     }
-    if (appliances.includes(selected)) {
-      selectedAppliance.push(selected);
+    for (let i = 0; i < appliances.length; i++) {
+      if (appliances[i] === selected) {
+        selectedAppliance.push(selected);
+        break;
+      }
     }
-    if (ustensils.includes(selected)) {
-      selectedUtensil.push(selected);
+    for (let i = 0; i < ustensils.length; i++) {
+      if (ustensils[i] === selected) {
+        selectedUtensil.push(selected);
+        break;
+      }
     }
   }
 
@@ -478,11 +589,33 @@ function filtreRecherche() {
     const filteredRecipes = [];
     for (let i = 0; i < listRecipes.length; i++) {
       const recipe = listRecipes[i];
-      const hasAllIngredients = selectedIngredients.every((ingredient) => {
-        return recipe.ingredients.some((recipeIngredient) =>
-          recipeIngredient.ingredient.includes(ingredient)
-        );
-      });
+      let hasAllIngredients = true;
+      for (let j = 0; j < selectedIngredients.length; j++) {
+        const ingredient = selectedIngredients[j];
+        let ingredientFound = false;
+        // for (let k = 0; k < recipe.ingredients.length; k++) {
+        //   const recipeIngredient = recipe.ingredients[k];
+        //   if (recipeIngredient.ingredient.includes(ingredient)) {
+        //     ingredientFound = true;
+        //     break;
+        //   }
+        //   // if (recipeIngredient.ingredient.includes(ingredient)) {
+        //   //   ingredientFound = true;
+        //   //   break;
+        //   // }
+        // }
+        for (let k = 0; k < recipe.ingredients.length; k++) {
+          const recipeIngredient = recipe.ingredients[k];
+          if (recipeIngredient.ingredient === ingredient) {
+            ingredientFound = true;
+            break;
+          }
+        }
+        if (!ingredientFound) {
+          hasAllIngredients = false;
+          break;
+        }
+      }
       if (hasAllIngredients) {
         filteredRecipes.push(recipe);
       }
@@ -494,7 +627,15 @@ function filtreRecherche() {
     const filteredRecipes = [];
     for (let i = 0; i < listRecipes.length; i++) {
       const recipe = listRecipes[i];
-      if (selectedAppliance.includes(recipe.appliance)) {
+      let applianceFound = false;
+      for (let j = 0; j < selectedAppliance.length; j++) {
+        const appliance = selectedAppliance[j];
+        if (recipe.appliance === appliance) {
+          applianceFound = true;
+          break;
+        }
+      }
+      if (applianceFound) {
         filteredRecipes.push(recipe);
       }
     }
@@ -505,7 +646,19 @@ function filtreRecherche() {
     const filteredRecipes = [];
     for (let i = 0; i < listRecipes.length; i++) {
       const recipe = listRecipes[i];
-      const hasSelectedUtensil = recipe.ustensils.some((utensil) => selectedUtensil.includes(utensil));
+      let hasSelectedUtensil = false;
+      for (let j = 0; j < selectedUtensil.length; j++) {
+        const utensil = selectedUtensil[j];
+        for (let k = 0; k < recipe.ustensils.length; k++) {
+          if (recipe.ustensils[k] === utensil) {
+            hasSelectedUtensil = true;
+            break;
+          }
+        }
+        if (hasSelectedUtensil) {
+          break;
+        }
+      }
       if (hasSelectedUtensil) {
         filteredRecipes.push(recipe);
       }
@@ -513,7 +666,6 @@ function filtreRecherche() {
     listRecipes = filteredRecipes;
   }
 
-  // Affichez les recettes filtrées
   recipeContainer.innerHTML = "";
   count = 0;
   for (let i = 0; i < listRecipes.length; i++) {
@@ -525,7 +677,6 @@ function filtreRecherche() {
     updateNumberRecettes(count);
   }
 
-  // Mettez à jour les listes de filtres (ingrédients, appareils, ustensiles)
   ingredients = [];
   appliances = [];
   ustensils = [];
@@ -538,6 +689,7 @@ function filtreRecherche() {
   listeAppliance(listRecipes);
   listeUstensils(listRecipes);
 }
+
 
 
   // function filtreRecherche() {

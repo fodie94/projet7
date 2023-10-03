@@ -278,9 +278,6 @@ height: 32px;
   justify-content: space-between;
 }
 
-#ButtonIngredient{
-  height: 56px;
-}
 
 /* autre test */
 
@@ -472,25 +469,52 @@ display: none;
  width: 100%;
 }
 
-.ButtonIngredient,
-.ButtonUstensil,
-.ButtonAppliance{
-  border: 1px solid  gray;
+#ButtonIngredient{
+  border: 1px solid  FFFFFF;
   width: 195px;
 top: 20px;
 left: 20px;
 padding: 17px, 16px, 17px, 16px;
 border-radius: 11px;
 gap: 63px;
+height: 56px;
+background: #FFFFFF;
 
 }
 
+
+#ButtonUstensil{
+  border: 1px solid  FFFFFF;
+  width: 195px;
+top: 20px;
+left: 20px;
+padding: 17px, 16px, 17px, 16px;
+border-radius: 11px;
+gap: 63px;
+height: 56px;
+background: #FFFFFF;
+
+}
+
+#ButtonAppliance{
+  border: 1px solid  FFFFFF;
+  width: 195px;
+top: 20px;
+left: 20px;
+padding: 17px, 16px, 17px, 16px;
+border-radius: 11px;
+gap: 63px;
+height: 56px;
+background: #FFFFFF;
+}
+
 #ButtonIngredientBis,
-.ButtonUstensilBis,
-.ButtonApplianceBis{
+#ButtonUstensilBis,
+#ButtonApplianceBis{
   display: flex;
   justify-content: space-between;
   padding: 17px 16px 17px 16px;
+  
 }
 
 .text{
