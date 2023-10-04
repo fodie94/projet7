@@ -335,7 +335,6 @@ async function filterRecipes(recipes) {
     buttonFiltre();
   });
 
-//test algo2
 // function filtreRecherche() {
 //   let listRecipes = displayedRecipes;
 
@@ -605,12 +604,12 @@ function filtreRecherche() {
         //   // }
         // }
         for (let k = 0; k < recipe.ingredients.length; k++) {
-          const recipeIngredient = recipe.ingredients[k];
-          if (recipeIngredient.ingredient === ingredient) {
-            ingredientFound = true;
-            break;
-          }
-        }
+  const recipeIngredient = recipe.ingredients[k];
+  if (recipeIngredient.ingredient === ingredient) {
+    ingredientFound = true;
+    break;
+  }
+}
         if (!ingredientFound) {
           hasAllIngredients = false;
           break;
@@ -690,169 +689,6 @@ function filtreRecherche() {
   listeUstensils(listRecipes);
 }
 
-
-
-  // function filtreRecherche() {
-  //   //let listRecipes = recipes
-  //   let listRecipes = displayedRecipes;
-  
-  //   const filteredRecipes = [];
-       
-  //   for (let i = 0; i < listRecipes.length; i++) {
-  //     const recipe = listRecipes[i];
-  //     const selectedIngredients = [];
-  //     const selectedAppliance = [];
-  //     const selectedUtensil = [];
-      
-  //     for (let j = 0; j < select.length; j++) {
-  //       if (ingredients.includes(select[j])) {
-  //         selectedIngredients.push(select[j]);
-  //       }
-  //       if (appliances.includes(select[j])) {
-  //         selectedAppliance.push(select[j]);
-  //       }
-  //       if (ustensils.includes(select[j])) {
-  //         selectedUtensil.push(select[j]);
-  //       }
-  //     }
-  
-  //     const recipeIngredients = recipe.ingredients;
-  //     console.log(recipeIngredients);
-  
-  //     const recipeAppliances = Array.isArray(recipe.appliance)
-  //       ? recipe.appliance
-  //       : [recipe.appliance];
-  
-  //     const recipeUstensils = recipe.ustensils;
-  
-  //     if (selectedIngredients.length > 0) {
-  //       let ingredientsMatch = false;
-  //       for (let k = 0; k < selectedIngredients.length; k++) {
-  //         if (recipeIngredients.some((ingredient) => ingredient.ingredient.includes(selectedIngredients[k]))) {
-  //           ingredientsMatch = true;
-  //           break;
-  //         }
-  //       }
-  //       if (!ingredientsMatch) {
-  //         continue;
-  //       }
-  //     }
-  
-  //     if (selectedAppliance.length > 0) {
-  //       let applianceMatch = false;
-  //       for (let l = 0; l < selectedAppliance.length; l++) {
-  //         if (recipeAppliances.some((appliance) => appliance.includes(selectedAppliance[l]))) {
-  //           applianceMatch = true;
-  //           break;
-  //         }
-  //       }
-  //       if (!applianceMatch) {
-  //         continue;
-  //       }
-  //     }
-  
-  //     if (selectedUtensil.length > 0) {
-  //       let utensilMatch = false;
-  //       for (let m = 0; m < selectedUtensil.length; m++) {
-  //         if (recipeUstensils.some((utensil) => utensil.includes(selectedUtensil[m]))) {
-  //           utensilMatch = true;
-  //           break;
-  //         }
-  //       }
-  //       if (!utensilMatch) {
-  //         continue;
-  //       }
-  //     }
-  
-  //     filteredRecipes.push(recipe);
-  //   }
-  
-  //   recipeContainer.innerHTML = "";
-  
-  //   // Affiche les recettes filtrées
-  //   count = 0;
-  //   for (let n = 0; n < filteredRecipes.length; n++) {
-  //     count++;
-  //     const recipe = filteredRecipes[n];
-  //     const mediaGalery = mediaTemplate(recipe);
-  //     const recipeCard = mediaGalery.getRecette();
-  //     recipeContainer.appendChild(recipeCard);
-  //      console.log(select)
-  //      console.log(recipeCard)
-  //     updateNumberRecettes(count);
-  //   }
-  
-  //   // Met à jour les listes en fonction des recettes filtrées
-  //   ingredients = [];
-  //   appliances = [];
-  //   ustensils = [];
-  
-  //   ingredientList.innerHTML = "";
-  //   applianceList.innerHTML = "";
-  //   ustensilList.innerHTML = "";
-  
-  //   listeIngredients(filteredRecipes);
-  //   listeAppliance(filteredRecipes);
-  //   listeUstensils(filteredRecipes);
-  // }
-
-  // function filtreRecherche() {
-  //   // Variables pour stocker les filtres sélectionnés
-  //   const selectedIngredients = [];
-  //   const selectedAppliance = [];
-  //   const selectedUtensil = [];
-  
-  //   // Récupérez la liste des recettes à partir de displayedRecipes
-  //   let listRecipes = displayedRecipes;
-  
-  //   // Appliquez les filtres sur la liste des recettes
-  //   if (selectedIngredients.length > 0) {
-  //     listRecipes = listRecipes.filter((recipe) => {
-  //       return selectedIngredients.every((ingredient) => {
-  //         return recipe.ingredients.some((recipeIngredient) =>
-  //           recipeIngredient.ingredient.includes(ingredient)
-  //         );
-  //       });
-  //     });
-  //   }
-  
-  //   if (selectedAppliance.length > 0) {
-  //     listRecipes = listRecipes.filter((recipe) =>
-  //       selectedAppliance.includes(recipe.appliance)
-  //     );
-  //   }
-  
-  //   if (selectedUtensil.length > 0) {
-  //     listRecipes = listRecipes.filter((recipe) =>
-  //       recipe.ustensils.some((utensil) => selectedUtensil.includes(utensil))
-  //     );
-  //   }
-  
-  //   // Affichez les recettes filtrées
-  //   recipeContainer.innerHTML = "";
-  //   count = 0;
-  //   for (let i = 0; i < listRecipes.length; i++) {
-  //     count++;
-  //     const recipe = listRecipes[i];
-  //     const mediaGalery = mediaTemplate(recipe);
-  //     const recipeCard = mediaGalery.getRecette();
-  //     recipeContainer.appendChild(recipeCard);
-  //     updateNumberRecettes(count);
-  //   }
-  
-  //   // Mettez à jour les listes de filtres (ingrédients, appareils, ustensiles)
-  //   ingredients = [];
-  //   appliances = [];
-  //   ustensils = [];
-  
-  //   ingredientList.innerHTML = "";
-  //   applianceList.innerHTML = "";
-  //   ustensilList.innerHTML = "";
-  
-  //   listeIngredients(listRecipes);
-  //   listeAppliance(listRecipes);
-  //   listeUstensils(listRecipes);
-  // }
 
   let countButtoFiltre = 0;
   function buttonFiltre() {
