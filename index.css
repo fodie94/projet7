@@ -1,176 +1,176 @@
 p,h1,h2,h3,h4,h5,h6{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body{
-    background-color: #E5E5E5;
+  background-color: #E5E5E5;
 }
 #recipe-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 48px;
-    padding: 0 50px;
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px;
+  padding: 0 50px;
+  
 }
 
 header{
-    height: 668px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 668px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo{
-    display: flex;
-    position: absolute;
-    top: 51px;
-    left: 69px;
-    align-items: center; 
-    gap: 10px;
-    color: white;
+  display: flex;
+  position: absolute;
+  top: 51px;
+  left: 69px;
+  align-items: center; 
+  gap: 10px;
+  color: white;
 
 }
 
 .logo p{
-    font-family: Anton;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 66px;
-    letter-spacing: 0em;
-    text-align: center;
+  font-family: Anton;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 #photos{
-    height: 100%;
+  height: 100%;
 }
 
 .title-header{
-    position: absolute;
-    font-family: Anton;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 66px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: yellow; 
+  position: absolute;
+  font-family: Anton;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: yellow; 
 top: 245px;
 
 
 }
 
 .search-container {
-    position: absolute;
-    display: inline-block;
-    width: 954px;
+  position: absolute;
+  display: inline-block;
+  width: 954px;
 top: 406.421875px;
 display: flex;
 align-items: center;
-  }
-  
-  #ingredientInput,
-  #applianceInput,
-  #ustensilInput {
-    width: 163px;
-    height: 36px;
-    border-radius: 2px;
-    border: 1px;
-    border: 1px solid #C6C6C6;
-  }
+}
 
-  input[type="text"] {
-    width: 100%;
-    height: 72px;
-    top: 53px;
-    left: 16px;
-    border-radius: 2px;
-    border: 1px;
-    border: 1px solid #C6C6C6;
-  }
-  
-  button[type="submit"] {
-    position: absolute;
-    right: 0;
-    padding: 8px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  .fa-search:before {
-    content: "\f002";
-    font-family: "FontAwesome";
-  }
+#ingredientInput,
+#applianceInput,
+#ustensilInput {
+  width: 163px;
+  height: 36px;
+  border-radius: 2px;
+  border: 1px;
+  border: 1px solid #C6C6C6;
+}
 
-  .filtres-recettes{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    align-items: center;
-    padding: 0 50px;
-  }
+input[type="text"] {
+  width: 100%;
+  height: 72px;
+  top: 53px;
+  left: 16px;
+  border-radius: 2px;
+  border: 1px;
+  border: 1px solid #C6C6C6;
+}
 
-  .filtres-recettes p{
-    font-family: Anton;
+button[type="submit"] {
+  position: absolute;
+  right: 0;
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.fa-search:before {
+  content: "\f002";
+  font-family: "FontAwesome";
+}
+
+.filtres-recettes{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.filtres-recettes p{
+  font-family: Anton;
 font-size: 21px;
 font-weight: 400;
 line-height: 32px;
 letter-spacing: 0em;
 text-align: left;
-  }
+}
 
 .filtres{
-    display: flex;
-    gap: 63px;
+  display: flex;
+  gap: 63px;
 }
 
 #tri-select1,#tri-select2,#tri-select3 {
-	padding: 5px;
-	font-size: 16px;
-	border-radius: 11px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    padding: 0 10px 0 0;
-    border-radius: 5px;
-    min-height: 50px;
-    font-weight: 500;
-    width: 150px;
-     flex-direction: column;
-     gap: 10px;
-  }
+padding: 5px;
+font-size: 16px;
+border-radius: 11px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 10px 0 0;
+  border-radius: 5px;
+  min-height: 50px;
+  font-weight: 500;
+  width: 150px;
+   flex-direction: column;
+   gap: 10px;
+}
 
-  .txt{
-    font-family: Manrope;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
+.txt{
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 
 .article {
-    border: 1px solid white;
-    width:  93%;
-    height: 731px;
-    margin-bottom: 20px;
-    border-radius: 21px;
-    background-color: white;
-    box-shadow: 0px 4px 34px 30px #0000000A;
-    display: flex;
-    flex-direction: column;
+  border: 1px solid white;
+  width:  93%;
+  height: 731px;
+  margin-bottom: 20px;
+  border-radius: 21px;
+  background-color: white;
+  box-shadow: 0px 4px 34px 30px #0000000A;
+  display: flex;
+  flex-direction: column;
 }
 
 .article img{
-    width: 100%;
+  width: 100%;
 }
 
 img {
-    width: 100%;
-    height: 253px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border-radius: 21px 21px 0 0;
+  width: 100%;
+  height: 253px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 21px 21px 0 0;
 }
 
 .article_haut{
@@ -180,72 +180,72 @@ position: relative;
 }
 
 .article_bas{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-   padding: 0 26px;
-   gap: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+ padding: 0 26px;
+ gap: 30px;
 }
 
 .name_recette {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .servings {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .appliance {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .descriptions_recettes {
-    font-style: italic;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .description{
-    display: flex;
-    height: 76px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  display: flex;
+  height: 76px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .time_recettes{
-    display: flex;
-    position: absolute;
-    width: 63px;
-    height: 26px;
-    bottom: 196px;
-    right: 10%;
-    padding: 5px 15px 5px 15px;
-    border-radius: 14px;
-    background-color: yellow;
-    border: 1px solid yellow;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  position: absolute;
+  width: 63px;
+  height: 26px;
+  bottom: 196px;
+  right: 10%;
+  padding: 5px 15px 5px 15px;
+  border-radius: 14px;
+  background-color: yellow;
+  border: 1px solid yellow;
+  align-items: center;
+  justify-content: center;
 }
 
 .block_ingredients{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .div_ingredients{
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;  
-    grid-template-rows: 1fr 1fr;
-    row-gap: 30px;  
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;  
+  grid-template-rows: 1fr 1fr;
+  row-gap: 30px;  
 }
 
 .filtresSelectedButton{
- display: flex;
- justify-content: space-around;
- align-items: center;
+display: flex;
+justify-content: space-around;
+align-items: center;
 width:203px;
 height:30px;
 padding: 17px 18px 17px 18px ;
@@ -255,14 +255,14 @@ background: #FFD15B;
 }
 
 #filtres-selected{
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 #number-recettes{
-    display: flex;
-    gap: 10px;
-    font-family: Anton;
+  display: flex;
+  gap: 10px;
+  font-family: Anton;
 font-size: 21px;
 font-weight: 400;
 line-height: 32px;
@@ -274,83 +274,80 @@ height: 32px;
 }
 
 .filtre{
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
-#ButtonIngredient{
-  height: 56px;
-}
 
 /* autre test */
 
-  /* .scrollable-list {
-    max-height: 200px;
-    overflow-y: auto;
-  }
-  
+/* .scrollable-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
 
 
 
-  #toggleButtonIngredient, #toggleButtonAppliance, #toggleButtonUstensil{
-    height: 60px;
-  }
 
-  .ButtonIngredient,.ButtonAppliance,.ButtonUstensil{
-    display: flex;
-    flex-direction: column;
-  }
+#toggleButtonIngredient, #toggleButtonAppliance, #toggleButtonUstensil{
+  height: 60px;
+}
 
-  Style des boutons
+.ButtonIngredient,.ButtonAppliance,.ButtonUstensil{
+  display: flex;
+  flex-direction: column;
+}
+
+Style des boutons
 .ButtonIngredient button,
 .ButtonAppliance button,
 .ButtonUstensil button {
-  width: 195px;
-  height:56px;
-  top: 20px;
-  left: 20px;
-  padding: 17px 16px 17px 16px;
-  border-radius: 11px;
-  gap: 63px;  
+width: 195px;
+height:56px;
+top: 20px;
+left: 20px;
+padding: 17px 16px 17px 16px;
+border-radius: 11px;
+gap: 63px;  
 }
 
 
 /* .ButtonIngredient button:hover,
 .ButtonAppliance button:hover,
 .ButtonUstensil button:hover {
-  background-color: #0056b3;
+background-color: #0056b3;
 } */
 
 /* Style des conteneurs cachés */
 #ingredientsContainer,
 #applianceContainer,
 #ustensilContainer {
-  display: none; /* Caché par défaut */
- 
-  
+display: none; /* Caché par défaut */
+
+
 }
 
 /* Autres styles pour les conteneurs, par exemple : */
 /* #ingredientInput,
 #applianceInput,
 #ustensilInput {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 5px;
+width: 100%;
+padding: 5px;
+margin-bottom: 5px;
 } */
 
 /* Style de la liste scrollable */
 /* .scrollable-list {
-  max-height: 200px; 
-  overflow-y: auto;
-  border: 1px solid #ddd; 
-  padding: 5px; 
+max-height: 200px; 
+overflow-y: auto;
+border: 1px solid #ddd; 
+padding: 5px; 
 } */
 
 /* .searchFiltre{
-    position: absolute;
-    display: inline-block;
-    width: 20%;
+  position: absolute;
+  display: inline-block;
+  width: 20%;
 display: flex;
 align-items: center;
 } */
@@ -358,14 +355,14 @@ align-items: center;
 /* #closeIngredient img ,#loucheSearchIngredient img,
 #closeAppliance img ,#loucheSearchAppliance img,
 #closeUstensil img ,#loucheSearchUstensil img{
- width: 10px;
+width: 10px;
 height: 10px;
 border: 0.5px;
 } */
 
 /* .submit{
-    transform: translate(180px, -30px);
-    display: flex;
+  transform: translate(180px, -30px);
+  display: flex;
 
 }  */
 
@@ -373,65 +370,65 @@ border: 0.5px;
 .ButtonIngredient button,
 .ButtonAppliance button,
 .ButtonUstensil button {
-    cursor: pointer;
-    width: 195px;
-    height:56px;
-    top: 20px;
-    left: 20px;
-    padding: 17px 16px 17px 16px;
-    border-radius: 11px;
-    gap: 63px;
+  cursor: pointer;
+  width: 195px;
+  height:56px;
+  top: 20px;
+  left: 20px;
+  padding: 17px 16px 17px 16px;
+  border-radius: 11px;
+  gap: 63px;
 }
 
 /* Styles pour les conteneurs */
 .container {
-    margin-top: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    transition: display 0.5s ease-in-out;
+  margin-top: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: display 0.5s ease-in-out;
 }
 
 .container.opened {
-    display: block;
+  display: block;
 }
 
 #ingredientsContainer{
-  width: 195px;
+width: 195px;
 }
 
 #ingredientList,
 #applianceList,
 #ustensilList{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  list-style: none;
-  padding: 0px 16px;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+gap: 24px;
+list-style: none;
+padding: 0px 16px;
 }
 
 .scrollable-list {
-  max-height: 240px; /* Définissez la hauteur maximale souhaitée */
-  overflow-y: auto; /* Activez la barre de défilement verticale si le contenu dépasse */
+max-height: 240px; /* Définissez la hauteur maximale souhaitée */
+overflow-y: auto; /* Activez la barre de défilement verticale si le contenu dépasse */
 }
 
 #ingrédientSelect,
 #applianceSelect,
 #ustensilSelect{
-  height: 37px;
-  background: #FFD15B;
-  align-items: center;
-  padding-left: 16px;
-  margin-bottom: 20px;
+height: 37px;
+background: #FFD15B;
+align-items: center;
+padding-left: 16px;
+margin-bottom: 20px;
 }
 
 #closeIngredient img ,#loucheSearchIngredient img,
 #closeAppliance img ,#loucheSearchAppliance img,
 #closeUstensil img ,#loucheSearchUstensil img{
- width: 10px;
+width: 10px;
 height: 10px;
 border: 0.5px;
 }
@@ -444,9 +441,9 @@ display: none;
 }
 
 #loucheSearchIngredient,#loucheSearchAppliance,#loucheSearchUstensil {
-  height: 10px;
-  width: 10px;
-  transform: translate(-20px, 0px);
+height: 10px;
+width: 10px;
+transform: translate(-20px, 0px);
 }
 
 
@@ -459,38 +456,65 @@ display: none;
 }
 
 #wrapper-fermer img{
-  width: 10px;
-  height: 10px;
+width: 10px;
+height: 10px;
 }
 
 #toggleButtonIngredient ,
 #toggleButtonAppliance,
 #toggleButtonUstensil{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
- width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+width: 100%;
 }
 
-.ButtonIngredient,
-.ButtonUstensil,
-.ButtonAppliance{
-  border: 1px solid  gray;
-  width: 195px;
+#ButtonIngredient{
+border: 1px solid  FFFFFF;
+width: 195px;
 top: 20px;
 left: 20px;
 padding: 17px, 16px, 17px, 16px;
 border-radius: 11px;
 gap: 63px;
+height: 56px;
+background: #FFFFFF;
 
 }
 
+
+#ButtonUstensil{
+border: 1px solid  FFFFFF;
+width: 195px;
+top: 20px;
+left: 20px;
+padding: 17px, 16px, 17px, 16px;
+border-radius: 11px;
+gap: 63px;
+height: 56px;
+background: #FFFFFF;
+
+}
+
+#ButtonAppliance{
+border: 1px solid  FFFFFF;
+width: 195px;
+top: 20px;
+left: 20px;
+padding: 17px, 16px, 17px, 16px;
+border-radius: 11px;
+gap: 63px;
+height: 56px;
+background: #FFFFFF;
+}
+
 #ButtonIngredientBis,
-.ButtonUstensilBis,
-.ButtonApplianceBis{
-  display: flex;
-  justify-content: space-between;
-  padding: 17px 16px 17px 16px;
+#ButtonUstensilBis,
+#ButtonApplianceBis{
+display: flex;
+justify-content: space-between;
+padding: 17px 16px 17px 16px;
+
 }
 
 .text{
@@ -499,9 +523,9 @@ gap: 63px;
 .search-ingredient,
 .search-appliance,
 .search-ustensil{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-bottom: 24px;
-  padding: 0px 16px;
+width: 100%;
+display: flex;
+align-items: center;
+margin-bottom: 24px;
+padding: 0px 16px;
 }
