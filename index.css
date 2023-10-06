@@ -16,6 +16,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 48px;
   padding: 0 50px;
+  margin-top: 55px;
 }
 
 header {
@@ -121,9 +122,15 @@ button[type="submit"] {
   text-align: left;
 }
 
-.filtres {
+.filtre {
   display: flex;
-  gap: 63px;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+.lesBoutton {
+  display: flex;
+  gap: 69px;
 }
 
 #tri-select1,
@@ -251,8 +258,8 @@ img {
   justify-content: space-around;
   align-items: center;
   width: 203px;
-  height: 30px;
-  padding: 17px 18px 17px 18px;
+  height: 53px;
+  /* padding: 17px 18px 17px 18px; */
   border-radius: 10px;
   gap: 60px;
   background: #ffd15b;
@@ -261,6 +268,7 @@ img {
 #filtres-selected {
   display: flex;
   gap: 15px;
+  padding-left: 100px;
 }
 
 #number-recettes {
@@ -275,11 +283,7 @@ img {
   color: #1b1b1b;
   width: 97px;
   height: 32px;
-}
-
-.filtre {
-  display: flex;
-  justify-content: space-between;
+  padding-top: 15px;
 }
 
 /* autre test */
