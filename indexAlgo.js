@@ -14,8 +14,7 @@ async function getRecettes() {
 async function filterRecipes(recipes) {
   const recipeContainer = document.getElementById("recipe-container");
   const searchInput = document.querySelector('input[type="text"]');
-  //  const closeSubmit = document.getElementById("closeSubmit");
-  // const filtresSelected = document.getElementById("filtres-selected");
+
   const wrapperFermer = document.getElementById("wrapper-fermer");
 
   const ButtonIngredient = document.getElementById("ButtonIngredient");
@@ -478,8 +477,6 @@ async function filterRecipes(recipes) {
     filtresSelectedButton.appendChild(closeFiltresSelected);
     filtresSelected.appendChild(filtresSelectedButton);
 
-    // Ajouter un attribut data à votre bouton contenant l'index de l'élément correspondant
-    //  closeFiltresSelected.setAttribute("data-index", select.length - 1);
     console.log("filtre ajoute numero: " + select.length + "   " + select);
     console.log(select);
 
@@ -516,19 +513,12 @@ async function filterRecipes(recipes) {
     }
   }
 
-  //  const searchInput = document.querySelector('input[type="text"]');
-  // Déclarez une variable pour stocker les recettes actuellement affichées
   let displayedRecipes = recipes;
 
   searchInput.addEventListener("keyup", () => {
     const searchTerm = normalize(searchInput.value);
     console.log(searchTerm);
-    // closeSubmit.style.display = "block";
-    // closeSubmit.addEventListener("click", () => {
-    //   searchTerm.value = "";
-    //   closeSubmit.style.display = "none";
-    // });
-    // Vérifiez si la longueur de la chaîne de recherche est d'au moins 3 caractères
+
     if (searchTerm.length >= 3) {
       // Seulement si la chaîne de recherche a au moins 3 caractères, effectuez la recherche
       displayedRecipes = filterRecipesBySearchTerm(
