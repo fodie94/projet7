@@ -46,10 +46,6 @@ export default function mediaTemplate(recipes) {
     servings.textContent = recipes.servings;
     servings.classList.add("servings");
 
-    //   const ingredients_recettes = document.createElement( 'div' )
-    //   ingredients_recettes.textContent = recipes.ingredients
-    //  ingredients_recettes.classList.add('ingredients_recettes')
-
     const block_ingredients = document.createElement("div");
     block_ingredients.classList.add("block_ingredients");
 
@@ -102,14 +98,10 @@ export default function mediaTemplate(recipes) {
     });
 
     article_bas.appendChild(name_recette);
-    // article.appendChild(servings)
-    // article.appendChild(time_recettes)
     article_bas.appendChild(descriptions_recettes);
     article_bas.appendChild(block_ingredients);
     article.appendChild(article_haut);
     article.appendChild(article_bas);
-    //  article.appendChild(appliance)
-    // article.appendChild(ul_ustensils)
 
     return article;
   }

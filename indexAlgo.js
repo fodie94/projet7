@@ -421,6 +421,7 @@ async function filterRecipes(recipes) {
     filtresSelectedButton.setAttribute("data-index", select.length - 1);
 
     const currentFilterIndex = select.length - 1; // L'indice actuel du filtre
+    console.log(currentFilterIndex);
 
     const nameFiltresSelected = document.createElement("p");
     nameFiltresSelected.innerText = select[currentFilterIndex];
